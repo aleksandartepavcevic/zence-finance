@@ -5,10 +5,10 @@ import Menu from "./components/Menu";
 
 const Navigation = () => {
   return (
-    <div className="flex flex-col flex-1 bg-white rounded-2xl gap-20 p-6 items-center justify-between h-full shadow-lg">
+    <div className="flex flex-col flex-1 bg-white rounded-2xl gap-20 px-6 py-10 items-center justify-between h-full shadow-lg">
       <Typography variant="h3">Zence Finance</Typography>
       <div className="flex flex-col items-center">
-        <Avatar className="w-16 h-16">
+        <Avatar className="w-24 h-24">
           <AvatarImage
             src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
             alt="Avatar image"

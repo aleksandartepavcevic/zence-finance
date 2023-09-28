@@ -1,7 +1,8 @@
-import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import Navigation from "@/components/Navigation";
+import Image from "next/image";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -21,9 +22,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */}
-        {children}
-        {/* </ThemeProvider> */}
+        <main className="flex justify-center items-center min-h-screen p-8">
+          <div className="relative flex container w-full min-h-[800px] xl:max-h-[1000px] bg-gray-100 p-4 rounded-3xl overflow-hidden">
+            <Navigation />
+            <div className="flex-[4] pt-28 px-20">
+              {/* <ThemeProvider attribute="class" defaultTheme="system" enableSystem> */}
+              {children}
+              {/* </ThemeProvider> */}
+            </div>
+          </div>
+        </main>
       </body>
     </html>
   );
